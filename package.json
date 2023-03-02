@@ -2,12 +2,15 @@
   "name": "validator-cyrpto-server",
   "packageManager": "yarn@3.4.1",
   "scripts": {
-    "start": "tsx server"
+    "dev": "tsx server",
+    "start": "node server",
+    "build": "tsc -b"
   },
   "dependencies": {
     "@json2csv/node": "^6.1.2",
     "@polkadot/util-crypto": "^10.3.1",
     "@polkadot/wasm-crypto": "^6.4.1",
+    "fastify": "^4.13.0",
     "tsx": "^3.12.3"
   },
   "devDependencies": {
